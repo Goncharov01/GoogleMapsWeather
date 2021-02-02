@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/map"
     android:name="com.google.android.gms.maps.SupportMapFragment"
@@ -14,19 +15,35 @@
 
         <EditText
             android:id="@+id/editText"
-            android:layout_width="248dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_weight="0.3"
             android:hint="Search Location"
             android:inputType="textPersonName" />
 
         <Button
+            android:id="@+id/search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.5"
+            android:layout_marginRight="6dp"
+            android:layout_weight="0.29"
             android:onClick="searchLocation"
-            android:text="Search" />
+            android:text="Search"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="60dp"
+            android:layout_weight="0.29"
+            android:enabled="false"
+            android:onClick="goIntent"
+            android:text="Weather"
+            android:textSize="10dp" />
+
 
     </LinearLayout>
+
 
 </fragment>
